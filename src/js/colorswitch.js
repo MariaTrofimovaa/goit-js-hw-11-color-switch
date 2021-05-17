@@ -35,7 +35,7 @@ function onStart() {
   if (!counterId) {
     counterId = setInterval(() => {
       bodyRef.style.backgroundColor =
-        colors[randomIntegerFromInterval(0, colors.length)];
+        colors[randomIntegerFromInterval(0, colors.length - 1)];
     }, 1000);
   }
 }
